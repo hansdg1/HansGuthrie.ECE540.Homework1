@@ -56,7 +56,7 @@ void ComputeEpsilon( double base )
 	{
 		Epsilon = PrecisionVersusBase( base );
 		Ratio = Epsilon / base;
-		//printf( "\n\nBase: %.60lf \nEpsilon: %.68lf\nratio: %.50lf", base, Epsilon, Ratio );
+		printf( "\n\nBase: %.60lf \nEpsilon: %.68lf\nratio: %.50lf", base, Epsilon, Ratio );
 		
 		fprintf( fout, "%.60lf, %.60lf, %.60lf\n", base, Epsilon, Ratio );
 		base /= 10;
